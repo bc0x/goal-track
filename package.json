@@ -2,6 +2,10 @@
   "name": "goal-track",
   "version": "0.1.0",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:bc0x/goal-track.git"
+  },
   "dependencies": {
     "react": "^16.7.0",
     "react-dom": "^16.7.0",

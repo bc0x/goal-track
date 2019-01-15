@@ -14,8 +14,9 @@ ReactDOM.render(<App />, rootEl);
 serviceWorker.unregister();
 
 if (module.hot) {
-  console.log('test');
   module.hot.accept('./App', () => {
+    const css = 'background: #FFF; color: white; color: red;';
+    console.log('%cWebpack is reloading App...', css);
     const NextApp = require('./App').default;
     console.log(NextApp);
     ReactDOM.render(<NextApp />, rootEl);
